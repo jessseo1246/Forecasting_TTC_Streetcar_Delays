@@ -17,4 +17,4 @@ Datasets:
 
 ### **🚂Data Science Solution Overview:**
 
-The dataset has been cleaned by addressing duplicates, handling missing values, converting necessary data types, and eliminating irrelevant data in preparation for analysis. With the clean dataset, we will use visualizations to identify the distribution of relationships between variables and create hypotheses for regression models, which will be conducted later on.
+The dataset has been cleaned by addressing duplicates, handling missing values, converting necessary data types, and eliminating irrelevant data to perform the analysis. With the clean dataset, we will use visualizations to identify the distribution of relationships between variables and create hypotheses for regression models, which will conduct later on.
