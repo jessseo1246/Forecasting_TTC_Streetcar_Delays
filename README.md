@@ -1,20 +1,20 @@
-Exploring the Influence of Weather on TTC Streetcar Delays and Forecasting Delays
+# 🚂Exploring the Influence of Weather on TTC Streetcar Delays and Forecasting Delays🌤️
+
+### **🚂Project Objectives:**
 
 
 Many people rely on public transportation as their only source of travel. When public transit experiences unexpected delays or cancellations, it disrupts many passengers' schedules and raises safety concerns. With the city expecting the population to grow, how are they preparing to accommodate more passengers when current issues remain unresolved?
 
-This project analysis Toronto's streetcar delays and their causes, along with weather conditions, to identify delay patterns. The goal is to provide accurate information to commuters about upcoming streetcar delays.
+This project analyzes Toronto's streetcar delays and their causes, as well as the influence of weather conditions, to identify delay patterns. The goal is to provide commuters with accurate information about upcoming streetcar delays.
 
+### **🚂Data Resources:**
 
-Data Resources: 
+The datasets used in this project are collected from the City of Toronto's Open Data platform and Environment Canada. Weather data is scraped from multiple URL links with the necessary permissions. After gathering these two separate datasets, they are merged to commence the analysis. The resulting dataset consists of 42,402 rows and 21 columns.
 
-The datasets used in this project were collected from the City of Toronto's Open Data platform and Environment Canada. Weather data was scraped from multiple URL links with the necessary permissions. After gathering these two separate datasets, they were merged to commence the analysis. The resulting dataset consists of 32,251 rows and 21 columns.
+Datasets: 
+- TTC dataset: 2021 Jan.01 - 2023. Sept.30
+- Weather dataset: 2021 Jan.01 - 2023 Sept.30
 
-  Data dictionary: 
-    - 
+### **🚂Data Science Solution Overview:**
 
-4. your proposed data science solution,
-5. the impact of your solution,
-
-
-   
+The dataset has been cleaned by addressing duplicates, handling missing values, converting necessary data types, and eliminating irrelevant data in preparation for analysis. With the clean dataset, we will use visualizations to identify the distribution of relationships between variables and create hypotheses for regression models, which will be conducted later on.
