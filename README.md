@@ -11,7 +11,7 @@ This project analyzes Toronto's streetcar delays and their causes, as well as th
 
 ### **🚂Data Resources:**
 
-The datasets used in this project are collected from the City of Toronto's Open Data platform and Environment Canada. Weather data is scraped from multiple URL links with the necessary permissions. After gathering these two separate datasets, they are merged to commence the analysis. The resulting dataset consists of 42,402 rows and 21 columns.
+The datasets used in this project are collected from the City of Toronto's Open Data platform and Environment Canada. Weather data is scraped from multiple URL links with the necessary permissions. After gathering these two separate datasets, they are merged to commence the analysis. The resulting dataset consists of 42,265 rows and 15 columns.
 
 Datasets: 
 - TTC dataset: 2021 Jan.01 - 2023. Sept.30
