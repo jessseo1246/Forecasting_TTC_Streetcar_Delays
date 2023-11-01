@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🌤️ Exploring the Influence of Weather on TTC Streetcar Delays and Forecasting Delays 🌤️</h1>
+  <h1> Exploring the Influence of Weather on TTC Streetcar Delays and Forecasting Delays </h1>
 </div>
 
 ### **🚂Project Objectives:**
