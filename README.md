@@ -37,12 +37,12 @@ The datasets used in this project are collected from the [City of Toronto's Open
 | Column | Description |
 | --- | --- |
 | Datetime | Date and time of when weather data and streetcar delay was recorded between Jan 01, 2021 to Sept 30, 2023 |
-| Temperature | Atmostpheric temperature in degrees Celsius |
-| Precipitation | Precipitation amount stored in mm |
-| Summer_PT | Percieved temperature in Summer to indicate hot temperature |
-| Winter_PT | Percieved temperature in Winter to indicate cold temperature |
+| Temperature | Atmostpheric temperature in degrees Celsius per hour |
+| Precipitation | Precipitation amount stored in mm per hour |
+| Summer_PT | Percieved temperature in Summer to indicate hot temperature per hour |
+| Winter_PT | Percieved temperature in Winter to indicate cold temperature per hour |
 | Wind_Speed | Wind Speed km per hour |
-| Visibility | Visibility of weather atmosphere in km |
+| Visibility | Visibility of weather atmosphere in km per hour |
 | Weather | Observations of atmospheric phenomenon |
 | Time | When the delay causing incident occurred |
 | Day | The name of the day |
@@ -53,4 +53,7 @@ The datasets used in this project are collected from the [City of Toronto's Open
 | Veicle | Vehicle number | 
 | Location | The location of the delay | 
 | Incident | The description of the delay causing incident | 
+
+### Contributer
+Jessica 
 
