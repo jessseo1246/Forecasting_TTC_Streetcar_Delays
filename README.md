@@ -53,7 +53,3 @@ The datasets used in this project are collected from the [City of Toronto's Open
 | Veicle | Vehicle number | 
 | Location | The location of the delay | 
 | Incident | The description of the delay causing incident | 
-
-### Contributer
-Jessica 
-
