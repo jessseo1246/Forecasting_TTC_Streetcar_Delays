@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> Exploring TTC Streetcar Delays and Forecasting Delays </h1>
+  <h1> Exploring TTC Streetcar Dataset and Forecasting Delays </h1>
 </div>
 
 ### 🚂 Project Objectives 
