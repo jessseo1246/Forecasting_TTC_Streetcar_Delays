@@ -27,7 +27,8 @@ Regain the reputation of being the [best public transit agency](https://www.ttc.
 **Data**: Datasets used for analysis/modeling and links to references.    
 **Notebooks**: Detailed project analysis.   
 **Models**: Models created in notebooks.   
-**Docs**: Additional documents such as presentation slides and streamlit.
+**Docs**: Presentation Slides
+**Streamlit**: Streamlit Web app.
 
 ### ⚙️ Data Resources 
 The datasets used in this project are collected from the [City of Toronto's Open Data](https://open.toronto.ca/dataset/ttc-streetcar-delay-data/) and [Environment Canada](https://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2009-12-10%7C2023-10-03&dlyRange=2010-02-02%7C2023-10-02&mlyRange=%7C&StationID=48549&Prov=ON&urlExtension=_e.html&searchType=stnProv&optLimit=yearRange&StartYear=2022&EndYear=2023&selRowPerPage=25&Line=179&lstProvince=ON&timeframe=1&time=LST&time=LST&Year=2021&Month=1&Day=13#). Weather data is scraped from multiple URL links with the necessary permissions. After gathering these two separate datasets, they are merged to commence the analysis. 
