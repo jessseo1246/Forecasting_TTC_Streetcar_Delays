@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> Exploring TTC Streetcar Delays and Forecasting Delays </h1>
+  <h1> Exploring TTC Streetcar Dataset and Forecasting Delays </h1>
 </div>
 
 ### 🚂 Project Objectives 
@@ -22,6 +22,7 @@ Regain the reputation of being the [best public transit agency](https://www.ttc.
 3. Baseline modelling
 4. Advanced modelling
 5. Saving cleaned dataset and machine learning models
+6. Creating interactive web app for users to predict delays
 
 ### 🔍 Project Structure  
 **Data**: Datasets used for analysis/modeling and links to references.    
