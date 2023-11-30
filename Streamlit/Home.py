@@ -15,7 +15,7 @@ st.write("\n")
 #st.markdown("<h1 style='text-align: center; color: grey;'>Hello Everyone!</h1>", unsafe_allow_html=True)
 
 #Picture
-image = Image.open('/Users/jessicaseo/Documents/Weather_Influenced_TTC_Streetcar_Delay_Prediction/Streamlit/homepage.jpg')
+image = Image.open('Streamlit/homepage.jpg')
 
 #col1, col2, col3, col4 = st.columns(4)
 #with col2:
