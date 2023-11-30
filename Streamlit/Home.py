@@ -4,6 +4,7 @@ import pandas as pd
 import plotly.figure_factory as ff
 import plotly.express 
 from PIL import Image
+import plotly.figure_factory as ff
 
 # Centered title using HTML and Markdown
 st.markdown("<h1 style='text-align: center;'>Forecasting Streetcar Delays</h1>", unsafe_allow_html=True)
