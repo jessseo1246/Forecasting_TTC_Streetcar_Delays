@@ -36,7 +36,7 @@ The goal is to assist commuters in predicting delay severity based on time, rout
 st.header(' • Areas of Impact')
 
 #Picture
-image = Image.open('/Users/jessicaseo/Documents/Weather_Influenced_TTC_Streetcar_Delay_Prediction/Streamlit/General.jpg')
+image = Image.open('Streamlit/General.jpg')
 
 #col1, col2, col3, col4 = st.columns(4)
 #with col2:
