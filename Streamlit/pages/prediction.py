@@ -8,11 +8,25 @@ model = joblib.load('best_decision_tree.joblib')
 df = pd.read_csv('Streamlit_data.csv')
 df2 = pd.read_csv('Capstone_clean_model.csv')
 
+# Header
+st.header("Instruction")
+st.write("Please choose the conditions from the left sidebar for predictive analysis. Our advanced model forecasts the probability rate for the severity of delays based on the selected conditions. For a comprehensive overview of delay severity,  refer to the table below, providing detailed information on each category.")
+
+# Sample data
+data = {
+    "Delay Type": ["Slight Delay", "Moderate Delay", "Severe Delay"],
+    "Definition": ["Delayed between 0-6 minutes", "Delayed between 7-9 minutes", "Dealyed greater than 10 minutes"]
+}
+
+# Create a DataFrame
+table_df = pd.DataFrame(data)
+
+# Display the table
+st.table(table_df)
 
 
 if st.sidebar.expander('Show Filters'):
     #dropdown sections (weather, month, hour, line)
-    selected_weather = st.sidebar.selectbox('Select Weather', df['Weather'].unique())
 
     unique_months =df['Month'].unique()
     sorted_months =sorted(unique_months)
@@ -24,15 +38,37 @@ if st.sidebar.expander('Show Filters'):
 
     selected_hours =st.sidebar.selectbox('Select Hour', sorted_hours)
 
-    sorted_lines = df['Line'].value_counts().index.tolist()
-    selected_line = st.sidebar.selectbox('Select Line', sorted_lines)
+    selected_weather = st.sidebar.selectbox('Select Weather', df['Weather'].unique())
 
 
+    sorted_lines = df['Line'].unique()
+    sorted_lines.sort()
+    # Create Streamlit app
+    selected_line = st.sidebar.selectbox('Select Route', sorted_lines)
 
+    # Now you can use selected_line to filter your DataFrame
+    selected_data = df[df['Line'] == selected_line]
 
 
 # functon to make prediction
-@st.cache
+def predict(features):
+        # Process the features as needed
+        
+        # Example: Convert the input dictionary into a DataFrame
+        input_data = pd.DataFrame([features])
+
+        # Predict probabilities using the loaded model
+        model_prediction = model.predict(input_data)[0]
+        if model_prediction == 0:
+             return 'Slight Delay'
+        elif model_prediction == 1:
+             return 'Moderate delay'
+        else:
+             return 'Severe Delay'
+        
+
+
+# functon to make prediction
 def predict_probability(features):
         # Process the features as needed
         
@@ -41,13 +77,19 @@ def predict_probability(features):
 
         # Predict probabilities using the loaded model
         probabilities = pd.DataFrame(model.predict_proba(input_data), columns=model.classes_)
+        # Mapping of old column names to new column names
+        column_mapping = {
+            0: 'Slight Delay',
+            1: 'Moderate Delay',
+            2: 'Severe Delay'}
+        probabilities.rename(columns=column_mapping, inplace=True)
         return probabilities
 
 
 if st.sidebar.button('Predict'):
  
     # Display results of the NLP task
-    st.header("Prediction")
+    st.header("How long should we expect the delay?")
     
 
     cloudy = 1 if selected_weather == 'Cloudy' else 0
@@ -121,27 +163,27 @@ if st.sidebar.button('Predict'):
 
     # Predict probabilities
     probabilities = predict_probability(sorted_dict)
-        
+    name_prob = predict(sorted_dict)
+
+    st.write(f"On the day you selected, the streetcar is most likelty to be **{name_prob}ed**. Please plan your trip accordingly.")
+
+
    # Get the category names and probabilities
     category_names = probabilities.columns.tolist()  # Get column names as category names
     prob_values = probabilities.iloc[0].values  # Extract the values from the first row
 
-    # Divide the layout into a 2x2 grid
-    col1, col2 = st.columns(2)
+    # Divide the layout into a 1x3 grid
+    col1, col2, col3 = st.columns(3)
 
-                # Display probabilities in a 2x2 grid of gauge charts
-    for i, (category, prob_value) in enumerate(zip(category_names, prob_values * 100)):
-        if i < 2:
-            col = col1
-        else:
-            col = col2
-            
+    # Display probabilities in a 1x3 grid of gauge charts
+    for category, prob_value, col in zip(category_names, prob_values, [col1, col2, col3]):
         with col:
             fig = go.Figure(go.Indicator(
                 mode="gauge+number",
-                value=prob_value,
-                title={'text': f"% Probability of {category}"},
-                gauge={'axis': {'range': [0, 100]}, 'bar': {'color': '#4a7ba6'}},
+                value=prob_value * 100,  # Multiply by 100 to convert to percentage
+                title={'text': f"% Probability of <br />{category}"},
+                gauge={'axis': {'range': [0, 100]}, 'bar': {'color': '#FE9F5D'}},
             ))
             st.plotly_chart(fig, use_container_width=True)
+
     
