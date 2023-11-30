@@ -238,6 +238,7 @@ pkginfo @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_d1
 platformdirs @ file:///Users/cbousseau/work/recipes/ci_py311/platformdirs_1677909443319/work
 plotly @ file:///Users/cbousseau/work/recipes/ci_py311/plotly_1677953301864/work
 pluggy @ file:///Users/cbousseau/work/recipes/ci_py311/pluggy_1677906980825/work
+plotly
 ply==3.11
 pooch @ file:///tmp/build/80754af9/pooch_1623324770023/work
 poyo @ file:///tmp/build/80754af9/poyo_1617751526755/work
