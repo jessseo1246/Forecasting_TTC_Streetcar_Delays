@@ -6,9 +6,8 @@ import plotly.graph_objects as go
 import numpy as np
 
 
-model = joblib.load('best_decision_tree.joblib')
-df = pd.read_csv('Streamlit_data.csv')
-df2 = pd.read_csv('Capstone_clean_model.csv')
+model = joblib.load('Streamlit/pages/best_decision_tree.joblib')
+df = pd.read_csv('Streamlit/pages/Streamlit_data.csv')
 
 # Centered title using HTML and Markdown
 st.markdown("<h1 style='text-align: center;'>Exploratory Data Analysis</h1>", unsafe_allow_html=True)
