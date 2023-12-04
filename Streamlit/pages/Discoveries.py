@@ -6,8 +6,8 @@ import plotly.graph_objects as go
 import numpy as np
 
 
-model = joblib.load('Forecasting Streetcar Delays/Models/best_decision_tree.joblib')
-df = pd.read_csv('pages/Streamlit_data.csv')
+model = joblib.load('/Users/jessicaseo/Documents/Projects/Forecasting Streetcar Delays/Models/best_decision_tree.joblib')
+df = pd.read_csv('/Users/jessicaseo/Documents/Projects/Forecasting Streetcar Delays/Streamlit/pages/Streamlit_data.csv')
 
 # Centered title using HTML and Markdown
 st.markdown("<h1 style='text-align: center;'>Exploratory Data Analysis</h1>", unsafe_allow_html=True)

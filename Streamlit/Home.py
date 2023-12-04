@@ -12,7 +12,7 @@ st.write("\n")
 #st.markdown("<h1 style='text-align: center; color: grey;'>Hello Everyone!</h1>", unsafe_allow_html=True)
 
 #Picture
-image = Image.open('Streamlit/coverpage.jpg')
+image = Image.open('/Users/jessicaseo/Documents/Projects/Forecasting Streetcar Delays/Streamlit/coverpage.jpg')
 
 #col1, col2, col3, col4 = st.columns(4)
 #with col2:
@@ -33,7 +33,7 @@ The goal is to assist commuters in predicting delay severity based on time, stre
 st.header(' • Areas of Impact')
 
 #Picture
-image = Image.open('Streamlit/impacts.jpg')
+image = Image.open('/Users/jessicaseo/Documents/Projects/Forecasting Streetcar Delays/Streamlit/impacts.jpg')
 
 #col1, col2, col3, col4 = st.columns(4)
 #with col2:

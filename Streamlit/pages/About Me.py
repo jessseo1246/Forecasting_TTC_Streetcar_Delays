@@ -9,7 +9,7 @@ st.markdown("<h1 style='text-align: center;'>The Story Behind the Project</h1>",
 
 # Set the title of the web app
 #Picture
-image = Image.open('Streamlit/pages/profilepic.jpg')
+image = Image.open('/Users/jessicaseo/Documents/Projects/Forecasting Streetcar Delays/Streamlit/pages/profilepic.jpg')
 
 #st.markdown("<h1 style='text-align: center; color: grey;'></h1>", unsafe_allow_html=True)
 
