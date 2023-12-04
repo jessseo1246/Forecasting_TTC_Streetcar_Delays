@@ -28,7 +28,7 @@ Regain the reputation of being the [best public transit agency](https://www.ttc.
 **Data**: Datasets used for analysis/modeling and links to references.    
 **Notebooks**: Detailed project analysis, requirement.txt  
 **Models**: Models created in notebooks.   
-**Presentation Slides**: Presentation Slides.  
+**Presentation**: Presentation Slides.  
 **Streamlit**: Streamlit Web app.
 
 ### ⚙️ Data Resources 
