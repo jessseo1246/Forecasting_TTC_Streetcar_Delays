@@ -4,8 +4,8 @@ import joblib
 import plotly.graph_objects as go
 
 
-model = joblib.load('Streamlit/pages/best_decision_tree.joblib')
-df = pd.read_csv('Streamlit/pages/Streamlit_data.csv')
+model = joblib.load('Forecasting Streetcar Delays/Models/best_decision_tree.joblib')
+df = pd.read_csv('pages/Streamlit_data.csv')
 
 # Header
 st.header("Instruction")
