@@ -26,9 +26,9 @@ Regain the reputation of being the [best public transit agency](https://www.ttc.
 
 ### 🔍 Project Structure  
 **Data**: Datasets used for analysis/modeling and links to references.    
-**Notebooks**: Detailed project analysis.   
+**Notebooks**: Detailed project analysis, requirement.txt  
 **Models**: Models created in notebooks.   
-**Docs**: Presentation Slides, requirement.txt 
+**Presentation Slides**: Presentation Slides.  
 **Streamlit**: Streamlit Web app.
 
 ### ⚙️ Data Resources 
@@ -55,3 +55,14 @@ The datasets used in this project are collected from the [City of Toronto's Open
 | Veicle | Vehicle number | 
 | Location | The location of the delay | 
 | Incident | The description of the delay causing incident | 
+
+### ✏️ How to Contribute
+
+Feel free to make suggestions to improve the analysis and models.
+
+```
+git clone https://github.com/jessseo1246/Forecasting_TTC_Streetcar_Delays.git
+```
+
+1. You can find the dataset from the *Data* directory.
+2. Go to the *Notebooks* directory to set up Python environment listed in the requirements.txt file and run the Jupyter Notebooks to contribute.
