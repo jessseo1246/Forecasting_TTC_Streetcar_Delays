@@ -24,7 +24,7 @@ st.write("\n")
 st.write("Hey everyone! I'm Jessica Seo, and I'm delighted to welcome you to my dashboard. ")
 st.write("This project was inspired by my personal curiosity as a resident of downtown Toronto." 
         " I often experienced the frustration of public transit delays, even while using transit apps. "
-        " I explored the dataset, analyzing the correlations between delays and features like time, streetcar route, and weather to find answers."
+        " I preprocessed the dataset, analyzing the correlations between delays and features like time, streetcar route, and weather to find answers."
         " Join me in forecasting streetcar delays with a machine learning model I've created. "
         )
 

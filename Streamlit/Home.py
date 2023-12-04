@@ -4,7 +4,6 @@ import pandas as pd
 import plotly.figure_factory as ff
 import plotly.express 
 from PIL import Image
-import plotly.figure_factory as ff
 
 # Centered title using HTML and Markdown
 st.markdown("<h1 style='text-align: center;'>Forecasting Streetcar Delays</h1>", unsafe_allow_html=True)
@@ -29,7 +28,7 @@ st.write('''Many people rely on public transportation as their only source of tr
 When public transit experiences unexpected delays or cancellations, it disrupts many passengers' schedules and raises safety concerns. 
 With the city expecting the population to grow, how are they preparing to accommodate more passengers when current issues remain unresolved?
 This project analyzes Toronto's streetcar delays and their causes to identify delay patterns. 
-The goal is to assist commuters in predicting delay severity based on time, route, and weather.''')
+The goal is to assist commuters in predicting delay severity based on time, streetcar route, and weather.''')
 
 
 #Areas of Impact
