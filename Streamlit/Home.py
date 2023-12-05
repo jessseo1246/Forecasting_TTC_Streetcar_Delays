@@ -21,7 +21,7 @@ st.image(image)
 
 
 # Description Section
-st.header(" • Project Objective")
+st.header("Project Objective")
 st.write('''Many people rely on public transportation as their only source of travel. 
 When public transit experiences unexpected delays or cancellations, it disrupts many passengers' schedules and raises safety concerns. 
 With the city expecting the population to grow, how are they preparing to accommodate more passengers when current issues remain unresolved?
@@ -30,7 +30,7 @@ The goal is to assist commuters in predicting delay severity based on time, stre
 
 
 #Areas of Impact
-st.header(' • Areas of Impact')
+st.header('Areas of Impact')
 
 #Picture
 image = Image.open('Streamlit/impacts.jpg')
@@ -41,7 +41,7 @@ image = Image.open('Streamlit/impacts.jpg')
 st.image(image)
 
 # Instructions Section
-st.header("• Site Map")
+st.header("Site Map")
 
 # Sample data
 data = {
