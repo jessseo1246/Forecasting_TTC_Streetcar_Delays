@@ -7,7 +7,7 @@ import numpy as np
 
 
 model = joblib.load('Models/best_decision_tree.joblib')
-df = pd.read_csv('Streamlit/pages/Streamlit_data.csv')
+df = pd.read_csv('streamlit/pages/Streamlit_data.csv')
 
 # Centered title using HTML and Markdown
 st.markdown("<h1 style='text-align: center;'>Exploratory Data Analysis</h1>", unsafe_allow_html=True)

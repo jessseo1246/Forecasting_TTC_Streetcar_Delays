@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 
 
 model = joblib.load('Models/best_decision_tree.joblib')
-df = pd.read_csv('Streamlit/pages/Streamlit_data.csv')
+df = pd.read_csv('streamlit/pages/Streamlit_data.csv')
 
 # Header
 st.header("Instruction")
